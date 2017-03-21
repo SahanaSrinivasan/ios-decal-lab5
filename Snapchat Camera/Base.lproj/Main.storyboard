@@ -73,7 +73,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BiK-XP-2VN" id="Yp6-2S-fei">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unread" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-aO-juv">
@@ -198,11 +198,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Snapchat 2.0" id="1DI-gn-L1G"/>
                     <connections>
-                        <outlet property="cancelButton" destination="cqe-9x-7hi" id="VET-2C-Myz"/>
-                        <outlet property="flipCameraButton" destination="zbV-W7-o6R" id="1NB-U0-5JU"/>
-                        <outlet property="imageViewOverlay" destination="6vW-ya-d7n" id="TWV-4Q-7J8"/>
-                        <outlet property="sendImageButton" destination="hbQ-Rm-w8Y" id="nPv-PV-bob"/>
-                        <outlet property="takePhotoButton" destination="Xwg-R0-wI2" id="kb1-AD-Sp5"/>
+                        <outlet property="cancelButton" destination="cqe-9x-7hi" id="oxp-B7-wfV"/>
+                        <outlet property="flipCameraButton" destination="zbV-W7-o6R" id="cpU-Gv-HAX"/>
+                        <outlet property="imageViewOverlay" destination="6vW-ya-d7n" id="neO-4I-PRH"/>
+                        <outlet property="sendImageButton" destination="hbQ-Rm-w8Y" id="bm2-ev-NSU"/>
+                        <outlet property="takePhotoButton" destination="Xwg-R0-wI2" id="TLc-6m-qCV"/>
                         <segue destination="4ll-MP-AHU" kind="show" identifier="imagePickerToChooseThread" id="YKG-5k-lSO"/>
                     </connections>
                 </viewController>
@@ -230,7 +230,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HbM-qq-oGu" id="Qk0-Mz-n9v">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR4-aT-u5Z">
