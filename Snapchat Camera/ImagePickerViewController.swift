@@ -116,9 +116,23 @@ class ImagePickerViewController: UIViewController, AVCapturePhotoCaptureDelegate
         //    selectedImage = squirrelImage
         //    toggleUI(isInPreviewMode: true)
     //}
-        var settings = AVCapturePhotoSettings()
+        let settings = AVCapturePhotoSettings()
         photoOutput.capturePhoto(with: settings, delegate: self)
     
+    }
+    
+    /// Provides the delegate a captured image in a processed format (such as JPEG).
+    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+        if let photoSampleBuffer = photoSampleBuffer {
+            // First, get the photo data using the parameters above
+            let photoData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer, previewPhotoSampleBuffer: previewPhotoSampleBuffer)
+                
+                // Then use this data to create a UIImage, and set it equal to `selectedImage`
+                selectedImage = UIImage(data: photoData!)!
+                    
+                    // This method updates the UI so the send button appears (no need to edit it)
+                    toggleUI(isInPreviewMode: true)
+        }
     }
     
     
